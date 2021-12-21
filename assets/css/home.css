@@ -1,0 +1,534 @@
+/* Navbar CSS START */
+
+
+/************/
+
+.navbar {
+    padding: 0 !important;
+    margin-bottom: 0;
+}
+
+.navbar-nav {
+    margin: 0 !important;
+}
+
+.navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    padding-left: 2.5rem;
+    margin-left: 5px !important;
+}
+
+.navbar .navbar-brand img {
+    height: 5rem !important;
+}
+
+.navbar .container-fluid {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0.7rem 0;
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .navbar .container-fluid .navbar-brand {
+        width: 80%;
+        padding-right: 0;
+    }
+    .navbar .container-fluid .social-nav {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+    }
+    .navbar .navbar-toggler {
+        margin-right: 5px;
+    }
+}
+
+.navbar .container-fluid .navLinks li {
+    font-weight: 600;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    text-align: center;
+}
+
+.navbar .container-fluid .navLinks li .active {
+    color: #fff100 !important;
+    border: 2.5px solid #fff100;
+    border-radius: 4px;
+}
+
+.navbar .container-fluid .navLinks li a {
+    color: #fff !important;
+    border: 2.5px solid transparent;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+}
+
+.navbar .container-fluid .navLinks li a:hover {
+    animation: borderCover 4s linear 1;
+    border-radius: 4px;
+    border: 2.5px solid #295ca9;
+    color: #8dd7f7 !important;
+}
+
+.navbar .container-fluid .navLinks li a.active:hover {
+    color: #fff100 !important;
+}
+
+@keyframes borderCover {
+    0% {
+        border-top: 2.5px solid #fff100;
+    }
+    25% {
+        border-right: 2.5px solid #fff100;
+    }
+    50% {
+        border-bottom: 2.5px solid #fff100;
+    }
+    75% {
+        border-left: 2.5px solid #fff100;
+    }
+    100% {
+        border: 2.5px solid #fff100;
+    }
+}
+
+.social-nav {
+    align-items: center;
+    margin: 0;
+}
+
+.social-nav li {
+    margin-right: 1rem;
+}
+
+.social-nav a .iconify {
+    color: #fff100;
+}
+
+.social-nav a:hover {
+    background: transparent !important;
+}
+
+.social-nav a:hover .iconify {
+    color: #8dd7f7 !important;
+}
+
+
+/* toggle */
+
+.toggle {
+    position: relative;
+    width: 50px;
+    background: transparent;
+    cursor: pointer;
+    outline: 0;
+    padding: 0 !important;
+    border: none;
+}
+
+.toggle:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+
+.toggle:before,
+.toggle:after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 7px;
+    background: #fff100;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.toggle:before {
+    border-left: 2px solid #fff;
+    top: -1px;
+    left: 5px;
+}
+
+.toggle:after {
+    bottom: -1px;
+    right: 5px;
+    border-right: 2px solid #fff;
+    transition-delay: 0.1s;
+}
+
+.addNavToggle:before {
+    left: calc(100% - 20px) !important;
+}
+
+.addNavToggle:after {
+    right: calc(100% - 15px) !important;
+}
+
+.toggle span {
+    width: 100%;
+    height: 5px;
+    border-radius: 3px;
+    display: block;
+    background: #8dd7f7;
+}
+
+.toggle span+span {
+    margin-top: 8px;
+}
+
+.navbar .container-fluid>.navbar-collapse {
+    margin: 0 !important;
+}
+
+.navbar .circleAnim .navbar-right li a {
+    width: auto !important;
+    height: auto !important;
+    padding-top: 0.6rem !important;
+    padding-bottom: 0.6rem !important;
+    padding: 0.6rem;
+}
+
+.navbar-nav>li>a {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.navbar .circleAnim .navbar-right li:hover a {
+    background-color: #295ca9 !important;
+}
+
+
+/************/
+
+
+/* Navbar CSS END */
+
+
+/************/
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.heroSection .carousel-inner {
+    height: 90vh;
+}
+
+@media (max-width: 767px) {
+    .heroSection .carousel-inner {
+        height: 92vh;
+    }
+}
+
+header .carousel-inner .item {
+    height: 100vh;
+}
+
+.banner {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.carousel-caption {
+    padding-bottom: 250px;
+    font-family: poppins;
+}
+
+.carousel-caption h2 {
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.carousel-caption h2 span {
+    color: #f9a51a;
+}
+
+.carousel-caption a {
+    background: #f9a51a;
+    padding: 15px 35px;
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+
+.carousel-indicators .active {
+    background-color: #f9a51a;
+    border-color: #f9a51a;
+}
+
+
+/*responsive css*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-caption {
+        padding-bottom: 350px;
+    }
+    .carousel-caption h2 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .carousel-caption h2 {
+        font-size: 25px;
+    }
+    .carousel-caption h3 {
+        font-size: 18px;
+    }
+    .carousel-caption a {
+        padding: 10px 25px;
+    }
+}
+
+
+/* =====================
+  Title Of Sections CSS
+  ====================== */
+
+.sign {
+    margin: 2.5rem 0;
+    text-align: center;
+    font-family: "Clip";
+    text-transform: uppercase;
+    font-size: 6rem;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #295ca9, -0.2rem 0.1rem 1rem #295ca9, 0.2rem 0.1rem 1rem #295ca9, 0 -0.5rem 2rem #174486, 0 0.5rem 3rem #174486;
+    animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@media (max-width: 768px) {
+    .sign {
+        font-size: 4rem;
+    }
+}
+
+@keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+        color: #ffe6ff;
+        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #295ca9, -0.2rem 0.1rem 1rem #295ca9, 0.2rem 0.1rem 1rem #295ca9, 0 -0.5rem 2rem #174486, 0 0.5rem 3rem #174486;
+    }
+    28%,
+    33% {
+        color: #295ca9;
+        text-shadow: none;
+    }
+    82%,
+    97% {
+        color: #295ca9;
+        text-shadow: none;
+    }
+}
+
+.flicker {
+    font-family: "Clip";
+    animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+    font-family: "Clip";
+    animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+    0% {
+        color: #174486;
+        text-shadow: none;
+    }
+    100% {
+        color: #ffe6ff;
+        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #295ca9, -0.2rem 0.1rem 1rem #295ca9, 0.2rem 0.1rem 1rem #295ca9, 0 -0.5rem 2rem #174486, 0 0.5rem 3rem #174486;
+    }
+}
+
+@keyframes flicker {
+    from {
+        opacity: 1;
+    }
+    4% {
+        opacity: 0.9;
+    }
+    6% {
+        opacity: 0.85;
+    }
+    8% {
+        opacity: 0.95;
+    }
+    10% {
+        opacity: 0.9;
+    }
+    11% {
+        opacity: 0.922;
+    }
+    12% {
+        opacity: 0.9;
+    }
+    14% {
+        opacity: 0.95;
+    }
+    16% {
+        opacity: 0.98;
+    }
+    17% {
+        opacity: 0.9;
+    }
+    19% {
+        opacity: 0.93;
+    }
+    20% {
+        opacity: 0.99;
+    }
+    24% {
+        opacity: 1;
+    }
+    26% {
+        opacity: 0.94;
+    }
+    28% {
+        opacity: 0.98;
+    }
+    37% {
+        opacity: 0.93;
+    }
+    38% {
+        opacity: 0.5;
+    }
+    39% {
+        opacity: 0.96;
+    }
+    42% {
+        opacity: 1;
+    }
+    44% {
+        opacity: 0.97;
+    }
+    46% {
+        opacity: 0.94;
+    }
+    56% {
+        opacity: 0.9;
+    }
+    58% {
+        opacity: 0.9;
+    }
+    60% {
+        opacity: 0.99;
+    }
+    68% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0.9;
+    }
+    72% {
+        opacity: 0.95;
+    }
+    93% {
+        opacity: 0.93;
+    }
+    95% {
+        opacity: 0.95;
+    }
+    97% {
+        opacity: 0.93;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.serviceSection #services {
+    margin: 0 !important;
+}
+
+.serviceSection .serviceAnimation {
+    margin: 5rem 0;
+}
+
+.aboutSection .about {
+    padding: 0 !important;
+}
+
+.contactSection .contact-page-section {
+    padding: 0 !important;
+}
+
+.show {
+    display: block;
+}
+
+.masonary-item {
+    display: none;
+}
+
+.projectSection .project-blocks .item .item-content a {
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+}
+
+.projectAnimation .left {
+    display: none !important;
+}
+
+.projectAnimation .right {
+    display: flex !important;
+}
+
+@media (max-width: 991px) {
+    .projectAnimation .left {
+        display: flex !important;
+    }
+    .projectAnimation .right {
+        display: none !important;
+    }
+}
+
+.contactSection .contact-page-section .el-contact-form .contact-form-area .sub-button button {
+    font-size: 1.8rem;
+}
+
+.contactSection .contact-page-section .el-contact-form {
+    padding: 65px 30px;
+}
+
+.glowReadMore {
+    text-transform: uppercase;
+    background-color: #295ca9;
+    font-size: 1.8rem;
+    font-weight: 700;
+    height: 60px;
+    width: 170px;
+    border-radius: 5px;
+    border: none;
+}
+
+.glowReadMore a {
+    color: #fff;
+}
+
+.glowReadMore:hover a {
+    color: #000;
+}
+
+.glowReadMore:hover {
+    background-image: linear-gradient( 90deg, #8dd7f7 0%, #f9a51a 60%, #fc4f4f 80%, #8dd7f7 100%);
+    animation: slidebg 3s linear infinite;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.09) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
